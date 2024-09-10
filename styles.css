@@ -1,0 +1,220 @@
+/* General Reset */
+body, h1, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(90deg, #131212, #426469);
+    color: #fff;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav1 {
+    display: flex;
+    gap: 20px;
+}
+
+.nav1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav1 ul li {
+    display: inline;
+}
+
+.nav1 ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+.nav1 ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #cfd8dc;
+}
+
+/* Login and Register Buttons */
+.nav2 {
+    display: flex;
+    gap: 10px;
+}
+
+.nav2 a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 18px;
+    border-radius: 90px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.nav2 .login {
+    background: #3dd86c;
+
+}
+
+.nav2 .login:hover {
+    background: #004d40;
+    transform: scale(1.05);
+}
+
+.nav2 .register {
+    background: #c53838;
+}
+
+.nav2 .register:hover {
+    background: #00796b;
+    transform: scale(1.05);
+}
+
+/* Arrange food items in a grid */
+.set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ensures spacing between items */
+    gap: 10px; /* Adds spacing between each gallery item */
+}
+
+.gallery {
+    flex-basis: 30%; /* Each item takes up about 30% of the row */
+    text-align: center;
+}
+
+.gallery img {
+    width: 200%; /* Makes images responsive */
+    max-width: 300px; /* Optional: Limit the max width of the images */
+    height: auto;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Form Styles */
+form {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Reduced padding */
+    margin-top: 20px;
+    max-width: 400px; /* Set a smaller max-width */
+    width: 100%;
+    margin: 0 auto; /* Center the form */
+}
+
+form:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: block;
+    margin: 8px 0 4px; /* Adjust margins for smaller form */
+    font-weight: bold;
+    font-size: 14px; /* Smaller font size */
+}
+
+form input,
+form textarea {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00796b;
+    box-shadow: 0 0 5px rgba(0, 121, 107, 0.5);
+    outline: none;
+}
+
+form button {
+    background: linear-gradient(90deg, #004d40, #00796b);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+form button:hover {
+    background: linear-gradient(90deg, #00796b, #004d40);
+    transform: scale(1.05);
+}
+
+form button:active {
+    background: #004d40;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg,#131212, #426469);
+    color: #fff;
+    text-align: left;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-left ul {
+        flex-direction: column;
+    }
+
+    .nav-left ul li {
+        margin-bottom: 10px;
+    }
+
+    .nav-right {
+        margin-top: 10px;
+    }
+}
+
